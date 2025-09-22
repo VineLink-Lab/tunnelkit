@@ -41,7 +41,7 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
         .package(url: "https://github.com/SwiftyBeaver/SwiftyBeaver", from: "1.9.0"),
-        .package(url: "https://github.com/passepartoutvpn/openssl-apple", from: "3.2.105"),
+        .package(url: "https://github.com/passepartoutvpn/openssl-apple", from: "3.5.200"),
 //        .package(url: "https://git.zx2c4.com/wireguard-apple", .exact: Version("1.0.15-26")),
 //        .package(url: "https://github.com/passepartoutvpn/wireguard-apple", exact: Version("1.0.17")),
         .package(url: "https://github.com/passepartoutvpn/wg-go-apple", branch: "master")
@@ -121,7 +121,7 @@ let package = Package(
             dependencies: [
                 "__TunnelKitUtils",
                 "TunnelKitCore",
-                .product(name: "WireGuardKit", package: "wireguard-apple"),
+                .product(name: "WireGuardKit", package: "wg-go-apple"),
                 "SwiftyBeaver"
             ]),
         .target(
